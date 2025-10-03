@@ -25,7 +25,55 @@ def fonction2(liste_legos: list, couleur: str):
     :param couleur: reçoit la couleur de legos
     :return:
     """
-    pourcentage = couleur /len(liste_legos) *100
+
+    for i in liste_legos:
+        if i == "bleu":
+            i /len(liste_legos) *100
+        elif i == "jaune":
+            i /len(liste_legos) *100
+        elif i == "rouge":
+            i /len(liste_legos)
+
+#def fonction2(liste_legos: list, couleur: str):
+#     """
+#      2. Fonction qui reçoit une liste de legos et une couleur et qui return le pourcentage de blocs de cette couleur
+#     :param liste_legos: reçoit la liste de légos
+#     :param couleur: reçoit la couleur de legos
+#     :return:
+#     """
+#
+#     nb_bleu = 0
+#     nb_rouge = 0
+#     nb_jaune = 0
+#     for i in liste_legos:
+#         if i == "bleu":
+#             nb_bleu += 1
+#             pourcentage = nb_bleu / len(liste_legos) * 100
+#             print(f"le pourcentage de la couleur bleu est : {pourcentage:.2f}")
+#         elif i == "jaune":
+#             nb_jaune / len(liste_legos) * 100
+#
+#         elif i == "rouge":
+#             nb_rouge / len(liste_legos) * 100
+#         else:
+#             print("Couleur n'est pas dans la liste")
+#
+#     return liste_legos
+#
+#
+# if __name__ == "__main__":
+#     lego = ["bleu", "bleu", "rouge", "jaune", "violet", "noir"]
+#     ajouter_couleur = input("Ajouter une couleur : ")
+#     lego.append(ajouter_couleur)
+#     fonction2(lego, ajouter_couleur)
+#
+#
+
+
+
+#
+    #pourcentage = couleur /len(liste_legos) *100
+
 
     print(f"{pourcentage:.2f}")
 
