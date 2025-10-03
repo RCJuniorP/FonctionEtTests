@@ -80,21 +80,23 @@ def fonction2(liste_legos: list, couleur: str):
 
     pass
 
-def moyenne_par_couleur(legos):
+def moyenne_par_couleur(liste_legos: list):
     """
     3. Fonction qui reçoit une liste de legos et qui retourne il y a combien de blocs de chaque couleur en moyenne
-    :param legos: nombre de legos avec differente couleur dans une liste
+    :param listede_legos: liste de legos
     """
-    from collections import Counter
-    liste_de_legos = ["jaune", "rouge", "jaune", "bleu", "rouge", "bleu"] #exemple
-    compteur = Counter(liste_de_legos)
-    print(compteur)
+    couleurs_uniques = []
+    for couleur in liste_legos:
+        if couleur not in couleurs_uniques:
+            couleurs_uniques.append(couleur)
+
+
 
     #Total de tous les blocs
-    total = sum(liste_de_legos)
+    total = len(liste_legos) #nombre de legos total
+    moyennes = total / len(couleurs_uniques)
 
-    moyennes =
-
+    return moyennes
 
 
 
